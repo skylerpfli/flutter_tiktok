@@ -1,9 +1,15 @@
+import 'package:flutter/services.dart';
+import 'package:flutter_conch_plugin/annotation/conch_scope.dart';
+import 'package:flutter_conch_plugin/conch_dispatch.dart';
 import 'package:flutter_tiktok/pages/homePage.dart';
 import 'package:flutter_tiktok/style/style.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+bool useConch = true;
+
+@ConchScope()
+void main() async {
   /// 自定义报错页面
   if (kReleaseMode) {
     ErrorWidget.builder = (FlutterErrorDetails flutterErrorDetails) {
@@ -17,6 +23,18 @@ void main() {
       );
     };
   }
+
+  WidgetsFlutterBinding.ensureInitialized();
+  if(useConch){
+    var source = await rootBundle.loadString('assets/conch_data/conch_result.json');
+    ConchDispatch.instance.loadSource(source);
+    return await ConchDispatch.instance.callStaticFun(library: 'package:flutter_tiktok/main.dart', funcName: 'mainInner');
+  }
+
+  mainInner();
+}
+
+mainInner(){
   runApp(MyApp());
 }
 
