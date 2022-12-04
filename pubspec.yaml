@@ -32,7 +32,9 @@ dependencies:
   # 播放器
   video_player: ^2.4.1
   flutter_conch_plugin:
-    path: /Users/lipengfei/conch/conch-plugin
+    git:
+      url: https://git.woa.com/flutter_components/FlutterDynamic/conch-plugin.git
+      ref: v1.1.5_pre.1
 
 dev_dependencies:
   flutter_test:
