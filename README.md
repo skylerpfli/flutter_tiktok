@@ -1,3 +1,9 @@
+**Conch热更新体验工程**
+
+切换到conchDynamic分支进行体验，使用参照 https://git.woa.com/flutter_components/FlutterDynamic/conch-demo
+
+---
+
 # flutter_tiktok
 
 仿写抖音的flutter app。主要实现了看视频功能，可以非常流畅的刷视频，左右滑，点小爱心。  
