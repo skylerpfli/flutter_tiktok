@@ -65,11 +65,9 @@ packages:
   flutter_conch_plugin:
     dependency: "direct main"
     description:
-      path: "."
-      ref: "v1.1.5_pre.1"
-      resolved-ref: "31897102d805fc068e54ad40d0e18f0eec8ac0ce"
-      url: "https://git.woa.com/flutter_components/FlutterDynamic/conch-plugin.git"
-    source: git
+      name: flutter_conch_plugin
+      url: "http://pub.oa.com"
+    source: hosted
     version: "1.1.5"
   flutter_spinkit:
     dependency: "direct main"
@@ -218,35 +216,35 @@ packages:
       name: video_player
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.4.8"
+    version: "2.5.1"
   video_player_android:
     dependency: transitive
     description:
       name: video_player_android
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.3.9"
+    version: "2.3.10"
   video_player_avfoundation:
     dependency: transitive
     description:
       name: video_player_avfoundation
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.3.7"
+    version: "2.3.8"
   video_player_platform_interface:
     dependency: transitive
     description:
       name: video_player_platform_interface
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "5.1.4"
+    version: "6.0.1"
   video_player_web:
     dependency: transitive
     description:
       name: video_player_web
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.12"
+    version: "2.0.13"
 sdks:
   dart: ">=2.17.0 <3.0.0"
   flutter: ">=2.10.0"
