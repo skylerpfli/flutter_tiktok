@@ -32,10 +32,7 @@ dependencies:
   # 播放器
   video_player: ^2.4.1
   flutter_conch_plugin:
-    hosted:
-      name: flutter_conch_plugin
-      url: http://pub.oa.com
-    version: 1.1.5
+    path: /Users/lipengfei/conch/conch-plugin
 
 dev_dependencies:
   flutter_test:
@@ -56,4 +53,5 @@ flutter:
     - assets/conch_build/patch_dat/
 
 conch:
+  enable: true
   outPath: ./assets

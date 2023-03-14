@@ -1,5 +1,5 @@
 import 'package:flutter/services.dart';
-import 'package:flutter_conch_plugin/annotation/conch_scope.dart';
+import 'package:flutter_conch_plugin/annotation/patch_scope.dart';
 import 'package:flutter_conch_plugin/conch_dispatch.dart';
 import 'package:flutter_tiktok/pages/homePage.dart';
 import 'package:flutter_tiktok/style/style.dart';
@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 
 bool useConch = true;
 
-@ConchScope()
+@PatchScope()
 void main() async {
   /// 自定义报错页面
   if (kReleaseMode) {
